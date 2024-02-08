@@ -5,7 +5,7 @@ import random
 import xlwt
 import time
 from multiprocessing import Pool
-from Performance_analysis import route_path, F_select_A, F_select_B
+from Performance_analysis_wires import route_path, F_select_A, F_select_B
 
 #  similar to the function "test_situation" in Performance_analysis
 def test_core(n, k, B, failure_s):
