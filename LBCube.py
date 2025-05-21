@@ -107,7 +107,8 @@ class LBCube_n_k():
                    for add in range(n):
                        ver = vertex_set_copy[0][0:k-i] + str(add) + vertex_set_copy[0][k-i+1:]
                        u_set.append(ver)
-                       vertex_set_copy.remove(ver)
+                   for uu in u_set:
+                       vertex_set_copy.remove(uu)
                    u_edge = itertools.combinations(u_set, 2)
                    for edges in u_edge:
                        EE.append(edges)
